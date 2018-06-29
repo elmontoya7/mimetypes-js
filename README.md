@@ -1,18 +1,18 @@
-# mimext
+# mimetypes-js
 Convertion tool from mime type to extension and extensions to mime type.
 
 # install
 ```javascript
-npm install mimext --save
+npm install mimetypes-js --save
 ```
 
 # usage
 ```javascript
-var mimext = require('mimext');
+var mime = require('mimetypes-js');
 
-var file_extension = mimext.getExt('video/quicktime');
+var file_extension = mime.getExt('video/quicktime');
 //file_extension == 'mov'
 
-var file_mime_type = mimext.getMime('pdf');
+var file_mime_type = mime.getMime('pdf');
 //file_mime_type == 'application/pdf'
 ```

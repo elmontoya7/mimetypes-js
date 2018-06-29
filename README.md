@@ -15,4 +15,7 @@ var file_extension = mime.getExt('video/quicktime');
 
 var file_mime_type = mime.getMime('pdf');
 //file_mime_type == 'application/pdf'
+
+var file_mime_type = mime.getMime('my_file.gz');
+//file_mime_type == 'application/x-gzip'
 ```

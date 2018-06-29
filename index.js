@@ -181,7 +181,9 @@ var getExt = function (mime) {
 //receives file name or extension
 var getMime = function (ext) {
   ext = ext.split('.').reverse().slice(0, 1)[0];
-  return extensions[ext] ? extensions[ext] : throw new TypeError('Invalid extension.');
+  if(extensions[ext])
+    return extensions[ext];
+  throw new TypeError('Invalid extension.');
 };
 
 var hasExt = function (file_name) {

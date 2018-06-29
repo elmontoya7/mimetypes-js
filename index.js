@@ -174,13 +174,45 @@ var getExt = function (mime) {
     if(mime == extensions[key])
       return key;
   }
+
+  throw new TypeError('Invalid mimetype.');
 };
 
 //receives file name or extension
 var getMime = function (ext) {
   ext = ext.split('.').reverse().slice(0, 1)[0];
-  return extensions[ext];
+  return extensions[ext] ? extensions[ext] : throw new TypeError('Invalid extension.');
+};
+
+var hasExt = function (file_name) {
+  return file_name.match(/(\.[a-z0-9]{1,4}$)/gm) ? true : false;
+};
+
+var removeExt = function (file_name) {
+  if(hasExt(file_name))
+    return file_name.replace(/(\.[a-z0-9]{1,4}$)/gmi, '');
+  return file_name;
+};
+
+var addExt = function (file, mime) {
+  if(!file) throw new TypeError('File or file name string not found.');
+  if(typeof(file) == 'string') {
+    if(!hasExt(file))
+      return file + '.' + getExt(mime);
+    else return file;
+  } else if(typeof(file) == 'object') {
+    mime = file.mimetype;
+    name = file.name || 'file';
+    if(!hasExt(name))
+      return name + '.' + getExt(mime);
+    else return name;
+  } else {
+    throw new ErrorType('File or file name string has no valid name or mimetype.');
+  }
 };
 
 exports.getExt = getExt;
 exports.getMime = getMime;
+exports.hasExt = hasExt;
+exports.removeExt = removeExt;
+exports.addExt = addExt;

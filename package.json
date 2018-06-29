@@ -1,0 +1,15 @@
+{
+  "name": "mimetypes-js",
+  "version": "1.0.0",
+  "description": "Convert mime type to extension and extension to mime type",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mime",
+    "type"
+  ],
+  "author": "Alexis Montoya",
+  "license": "MIT"
+}

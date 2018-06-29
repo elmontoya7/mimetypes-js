@@ -33,4 +33,6 @@ var file = { name: 'file_uploaded_from_device',
 var file_name = mime.addExt(file);
 //file_name == 'file_uploaded_from_device.pdf'
 
+var has = mime.hasExt('file_uploaded.3gp')
+//has == true
 ```

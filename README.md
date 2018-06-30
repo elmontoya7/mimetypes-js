@@ -36,3 +36,6 @@ var file_name = mime.addExt(file);
 var has = mime.hasExt('file_uploaded.3gp')
 //has == true
 ```
+___
+
+This library uses data extracted from [@bcherny](https://github.com/bcherny)'s repo.

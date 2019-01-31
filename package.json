@@ -1,6 +1,6 @@
 {
   "name": "mimetypes-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert mime type to extension and extension to mime type",
   "main": "index.js",
   "scripts": {

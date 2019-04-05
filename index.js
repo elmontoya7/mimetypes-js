@@ -154,10 +154,12 @@ var extensions = Object.freeze({
   wma: 'audio/x-ms-wma',
   wmv: 'video/x-ms-wmv',
   wmx: 'video/x-ms-wmx',
+  zip: 'multipart/x-zip',
   woff: 'application/x-font-woff',
   wrl: 'model/vrml',
   wsdl: 'application/wsdl+xml',
   xbm: 'image/x-xbitmap',
+  zip: 'application/x-zip-compressed',
   xhtml: 'application/xhtml+xml',
   xls: 'application/vnd.ms-excel',
   xml: 'application/xml',
@@ -166,9 +168,7 @@ var extensions = Object.freeze({
   xslt: 'application/xslt+xml',
   yaml: 'text/yaml',
   yml: 'text/yaml',
-  zip: 'application/zip',
-  zip: 'application/x-zip-compressed',
-  zip: 'multipart/x-zip'
+  zip: 'application/zip'
 });
 
 //receive file.mime

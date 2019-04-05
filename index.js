@@ -166,7 +166,9 @@ var extensions = Object.freeze({
   xslt: 'application/xslt+xml',
   yaml: 'text/yaml',
   yml: 'text/yaml',
-  zip: 'application/zip'
+  zip: 'application/zip',
+  zip: 'application/x-zip-compressed',
+  zip: 'multipart/x-zip'
 });
 
 //receive file.mime
